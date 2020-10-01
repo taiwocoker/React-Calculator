@@ -35,10 +35,9 @@
     ]
   },
   "devDependencies": {
-    "es-abstract": "1.18.0-next.0",
     "eslint": "6.8.x",
     "eslint-config-airbnb": "18.1.x",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "2.20.x",
     "eslint-plugin-jsx-a11y": "6.2.x",
     "eslint-plugin-react": "7.20.x",
     "eslint-plugin-react-hooks": "2.5.x",
