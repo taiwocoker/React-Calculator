@@ -2,38 +2,23 @@ import React from 'react';
 import Button from './Button';
 
 function ButtonPanel() {
-  return (
+    const Group1 = ['AC', '+/-', '%', '÷'];
+    const Group2 = ['7', '8', '9', 'x'];
+    const Group3 = ['4', '5', '6', '-'];
+    const Group4 = ['1', '2', '3', '+'];
+    const Group5 = ['0', '.', '='];
 
-    <div className="Groups">
-      <div className="Group1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
-      </div>
-      <div className="Group2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
-      </div>
-      <div className="Group3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
-      </div>
-      <div className="Group4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
-      </div>
-      <div className="Group5">
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
-      </div>
+    const Groups = [Group1, Group2, Group3, Group4, Group5];
+    
+  return (
+    <div>
+        {Groups.map(group => (
+           <div className="group" key={group}>
+               {group.map(char => (
+                   <Button key={char} buttonName={`${char}`} />
+               ))}
+           </div> 
+        ))}
     </div>
   );
 }
