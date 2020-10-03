@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
-    <div className="result d-flex">{result}</div>
+    <div className="result d-flex text-white p-5 align-items-end">{result}</div>
   );
 }
 Display.defaultProps = {
