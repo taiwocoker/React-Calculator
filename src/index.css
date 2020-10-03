@@ -1,14 +1,18 @@
-.App {
-  width: 700px;
-}
-
 .result {
-  /* background: gray; */
   height: 100px;
   font-weight: bold;
 }
 
 .group {
+  width: 700px;
   height: 100px;
-  flex-direction: row;
+}
+
+.button {
+  width: 25%;
+  border: 1px solid gray;
+}
+
+.button1 {
+  width: 50%;
 }
