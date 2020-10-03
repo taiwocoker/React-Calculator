@@ -3,7 +3,12 @@
 }
 
 .result {
-  background: gray;
+  /* background: gray; */
   height: 100px;
   font-weight: bold;
+}
+
+.group {
+  height: 100px;
+  flex-direction: row;
 }
