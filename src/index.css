@@ -1,16 +1,42 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 20px auto;
+}
+
 .result {
+  background-color: #858293;
+  width: 100%;
   height: 100px;
-  font-weight: bold;
+  color: #fff;
+  font-weight: bolder;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  padding-right: 10px;
+
 }
 
 .group {
-  width: 700px;
   height: 100px;
+  width: 100%;
 }
 
 .button {
   width: 25%;
-  border: 1px solid gray;
+  height: 100%;
+  font-size: 25px;
+  border: 1px solid darkgray;
+}
+
+.orange {
+  background-color: #f5913E;
+}
+
+.gray {
+  background-color: #E0E0E0;
 }
 
 .button1 {
