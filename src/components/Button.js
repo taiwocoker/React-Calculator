@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ buttonName, color, wide }) {
+function Button({ buttonName, color, wide, clickHandler }) {
+  
+  const handleClick = (buttonName) => {
+    // console.log(buttonName)
+    return clickHandler(buttonName)
+  }
+
   return (
-    <button type="button" className={`${color ? 'gray' : 'orange'} button text-center text-black ${wide && 'button1'}`}>
+    <button type="button" className={`${color ? 'gray' : 'orange'} button text-center text-black ${wide && 'button1'}`} onClick={() => handleClick(buttonName)}>
       {buttonName}
     </button>
   );
