@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display({ result }) {
+function Display({ result, next}) {
   return (
-    <div className="result">{result}</div>
+    <div className="result">{next ? next : result ? result : 0}</div>
   );
 }
 Display.defaultProps = {
