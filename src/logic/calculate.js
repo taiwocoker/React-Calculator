@@ -48,7 +48,3 @@ const calculate = (calculator, buttonName) => {
 };
 
 export default calculate;
-
-
-
-
