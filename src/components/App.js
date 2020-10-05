@@ -6,7 +6,7 @@ import ButtonPanel from './ButtonPanel';
 import Calculate from '../logic/calculate';
 
 export default class App extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       total: null,
@@ -17,17 +17,16 @@ export default class App extends Component {
 
   handleClick = buttonName => {
     const { total, next, operation } = this.state;
-    const result = Calculate({total, next, operation}, buttonName);
-    console.log(result)
+    const result = Calculate({ total, next, operation }, buttonName);
     this.setState({ total: result.total, next: result.next, operation: result.operation });
   }
-  
+
   render() {
-    const { total, next} = this.state;
+    const { total, next } = this.state;
     return (
       <div className="App d-flex">
         <Display result={total} next={next} />
-        <ButtonPanel clickHandler={this.handleClick}/>
+        <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
   }

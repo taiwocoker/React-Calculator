@@ -1,7 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  if (numberOne === '0' && operation === 'x' | '÷') return 0
+// eslint-disable-next-line no-bitwise
+  if (numberOne === '0' && operation === 'x' | '÷') return 0;
   const x = new Big(numberOne);
   const y = new Big(numberTwo);
 
@@ -12,7 +13,6 @@ const operate = (numberOne, numberTwo, operation) => {
   if (operation === 'x') return x.mul(y);
 
   return x.div(y);
-  
 };
 
 export default operate;
