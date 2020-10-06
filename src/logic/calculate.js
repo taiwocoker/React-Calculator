@@ -69,7 +69,6 @@ const calculate = (calculator, buttonName) => {
   }
 
   return { total, next, operation };
-  
 };
 
 export default calculate;

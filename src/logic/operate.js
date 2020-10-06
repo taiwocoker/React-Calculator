@@ -1,10 +1,10 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-    let total;
+  let total;
   const x = new Big(numberOne);
   const y = new Big(numberTwo);
-  
+
   if (operation === '-') return x.minus(y).toString();
 
   if (operation === '+') return x.plus(y).toString();
@@ -17,10 +17,8 @@ const operate = (numberOne, numberTwo, operation) => {
     } else {
       total = x.div(numberTwo).toString();
     }
-    return total;
-  } 
-  
-
+  }
+  return total;
 };
 
 export default operate;

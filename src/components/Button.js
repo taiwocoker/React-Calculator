@@ -7,10 +7,11 @@ function Button({
   const handleClick = buttonName => clickHandler(buttonName);
 
   return (
-    <button 
-    type="button"
-    className={`${color ? 'gray' : 'orange'} button text-center text-black ${wide && 'button1'}`} 
-    onClick={() => handleClick(buttonName)}>
+    <button
+      type="button"
+      className={`${color ? 'gray' : 'orange'} button text-center text-black ${wide && 'button1'}`}
+      onClick={() => handleClick(buttonName)}
+    >
       {buttonName}
     </button>
   );
