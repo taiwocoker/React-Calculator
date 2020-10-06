@@ -36,6 +36,10 @@ const calculate = (calculator, buttonName) => {
   }
 
   if (operations.includes(buttonName)) {
+    if (operationTotal) {
+      operationTotal = null;
+      operation = buttonName;
+    }
     if (next === null) {
       operation = buttonName;
     }
