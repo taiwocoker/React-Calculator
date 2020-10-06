@@ -1,18 +1,26 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-// eslint-disable-next-line no-bitwise
-  if (numberOne === '0' && operation === 'x' | '÷') return 0;
+    let total;
   const x = new Big(numberOne);
   const y = new Big(numberTwo);
+  
+  if (operation === '-') return x.minus(y).toString();
 
-  if (operation === '-') return x.minus(y);
+  if (operation === '+') return x.plus(y).toString();
 
-  if (operation === '+') return x.plus(y);
+  if (operation === 'x') return x.mul(y).toString();
 
-  if (operation === 'x') return x.mul(y);
+  if (operation === '÷') {
+    if (numberTwo === '0') {
+      total = 'Infinity';
+    } else {
+      total = x.div(numberTwo).toString();
+    }
+    return total;
+  } 
+  
 
-  return x.div(y);
 };
 
 export default operate;
