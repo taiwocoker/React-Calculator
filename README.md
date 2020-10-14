@@ -6,9 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## What it does
 - When the app is opened, you can make calculations, such as: sum, substraction, multiplication and division.
 
+## ScreenShot
+![screenshot](app_screenshot.PNG)
+
 ## Live Demo
 [Calculator Link](https://sello-calculate.herokuapp.com/)
-
 
 ## Built with
 - React
